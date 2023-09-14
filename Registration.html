@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah's E-Shop</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da9bef436c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-navbar">
+            <p>Welcome to our shop</p>
+            <div class="icons">
+                <a href="login.html"><button class="btn1">Login</button></a>
+                <a href="Registration.html"><button class="btn1">Register</button></a>
+
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" id="logo"><span id="span1">Hannah's</span>
+                    E-<span>Shop</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="./images/menu.png" alt="" width="30px"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product-cards">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: rgb(67 0 86);">
+                                <li><a class="dropdown-item" href="#">Samrt Phone</a></li>
+                                <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+                                <li><a class="dropdown-item" href="#">Cameras</a></li>
+                                <li><a class="dropdown-item" href="#">Fridge</a></li>
+                                <li><a class="dropdown-item" href="#">AC</a></li>
+                                <li><a class="dropdown-item" href="#">Samrt Watch</a></li>
+                                <li><a class="dropdown-item" href="#">Headphone</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                                <li><a class="dropdown-item" href="#">PC Moniter</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" id="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container" id="login">
+        <div class="row">
+            <div class="col-md-5 py-3 py-md-0" id="side1">
+                <h3 class="text-center">Register</h3>
+            </div>
+            <div class="col-md-7 py-3 py-md-0" id="side2">
+                <h3 class="text-center">Create Account</h3>
+                <form action="#" class="regform" id="form-reg"></form>
+                <div class="input2 text-center">                  
+                    <input type="text" placeholder="Name" id="name">
+                    <p class="error-message"></p>
+                    <input type="text" placeholder="User Name" id="username">
+                    <p class="error-message"></p>
+                    <input type="text" placeholder="Phone" id="phone">
+                    <p class="error-message"></p>
+                    <input type="email" placeholder="Email" id="email">
+                    <p class="error-message"></p>
+                    <input type="password" placeholder="Password" id="password">
+                    <p class="error-message"></p>
+                    <input type="password" placeholder="Confirm Password" id="confirm">
+                    <p class="error-message"></p>
+                    <input  class="reg-btn" type="submit" value="Register" id="btnreg" onclick="regvalidate()"/>
+                </div>
+                
+            </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container" id="newslater">
+        <h3 class="text-center">Subscribe To The Electronic Shop For Latest upload.</h3>
+        <div class="input text-center">
+            <input type="text" placeholder="Enter Your Email..">
+            <button id="subscribe">SUBSCRIBE</button>
+        </div>
+    </div>
+
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Hanna's E-Shop</h3>
+                        <p>
+                            Kottayam <br>
+                            Kerala <br>
+                            India <br>
+                        </p>
+                        <strong>Phone:</strong> +91 9500000000 <br>
+                        <strong>Email:</strong> hannaheshop@gmail.com <br>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Usefull Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policey</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+
+                        <ul>
+                            <li><a href="#">PS 5</a></li>
+                            <li><a href="#">Computer</a></li>
+                            <li><a href="#">Gaming Laptop</a></li>
+                            <li><a href="#">Mobile Phone</a></li>
+                            <li><a href="#">Gaming Gadget</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+                        <div class="socail-links mt-3">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Hannah's E-Shop</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="#">GJ Tech</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
